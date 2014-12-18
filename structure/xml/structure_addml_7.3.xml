@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_structure name="Data Structure" id="data_structure" xml_rev="2014-12-18">
+    <structure name="ADDML 7.3" id="addml-7.3" date="2014-12-18">
+        <!-- xml : xml definition top, id 0-1 -->
+        <element name="xml" id="0-1" occ="1">
+            <fixed>&#60;?xml version"1.0" encoding="UTF-8"?&#62;</fixed>
+        </element>
+        
+        <!-- DOCTYPE : dtd definition top, id 0-2 -->
+        <element name="doctype" id="0-2" occ="1">
+            <fixed>&#60;!DOCTYPE addmml SYSTEM 'addmml.dtd'&#62;</fixed>
+        </element>
+        
+        <!-- addml : xml top, id 0-3 -->
+        <element name="addml" id="0-3" occ="1">
+            <attribute name="version" occ="1" fixed="7.3"/>
+        </element>
+        
+        <!-- reference : id 1 -->
+        <element name="reference" id="1" occ="1"/>
+        
+        <!-- archives : id 1-1 -->
+        <element name="archives" id="1-1" occ="1">
+            <attribute name="ar_id" occ="1"/>
+        </element>
+        
+        <!-- ar_name : id 1-1-1 -->
+        <element name="ar_name" id="1-1-1" occ="1"/>
+            
+        <!-- system : id 1-2 -->
+        <element name="system" id="1-2" occ="1">
+            <attribute name="sy_id" occ="1"/>
+        </element>
+        
+        <!-- sy_name : id 1-2-1 -->
+        <element name="sy_name" id="1-2-1" occ="1"/>
+        <element name="startdate" id="1-2-2" occ="0-1"/>
+        <element name="enddate" id="1-2-2" occ="0-1"/>
+        
+        
+        <!-- structure : id 2 -->
+        <element name="structure" id="2" occ="1"/>
+        
+        <!-- dataset : id 2-1 -->
+        <element name="dataset" id="2-1" occ="1">
+            <attribute name="ds_id" occ="1"/>
+        </element>
+        
+        <!-- ds_descr : id 2-1-1 -->
+        <element name="ds_descr" id="2-1-1" occ="0-1"/>
+        
+        <!-- charset : id 2-1-2 -->
+        <element name="charset" id="2-1-2" occ="1" default="ISO-8859-1"/>
+        
+        <!-- NA: not available/implemented yet (some sublevels below 2-1-3 as well) -->
+        <!-- charset : id 2-1-3 -->
+        <element name="chardef" id="2-1-3" occ="0-n"/>
+        
+        <!-- format : id 2-1-4 -->
+        <element name="format" id="2-1-4" occ="1" default="XML" option="FIXED|DELIM|MARKUP|SGML|XML|HTML"/>
+        
+        <!-- recsep : id 2-1-5 -->
+        <element name="recsep" id="2-1-5" occ="1" default="NO" option="CRLF|CR|LF|NO"/>
+        
+        <!-- string_null : id 2-1-6 -->
+        <element name="string_null" id="2-1-6" occ="0-1"/>
+        
+        <!-- integer_null : id 2-1-7 -->
+        <element name="integer_null" id="2-1-7" occ="0-1"/>
+        
+        <!-- float_null : id 2-1-8 -->
+        <element name="float_null" id="2-1-7" occ="0-1"/>
+        
+        <!-- date_null : id 2-1-9 -->
+        <element name="date_null" id="2-1-8" occ="0-1"/>
+        
+        <!-- nu_files : id 2-1-10 -->
+        <element name="nu_files" id="2-1-10" occ="1"/>
+        
+        <!-- NA: not available/implemented yet (some sublevels below 2-1-11 as well) -->
+        <!-- sql : id 2-1-11 -->
+        <element name="sql" id="2-1-11" occ="0-n"/>
+        
+        
+        <!-- file : id 2-1-12 -->
+        <element name="file" id="2-1-12" occ="1-n">
+            <attribute name="name" occ="1"/>
+            <attribute name="path" occ="1"/>
+        </element>
+        
+        <!-- fi_descr : id 2-1-12-1 -->
+        <element name="fi_descr" id="2-1-12-1" occ="0-1"/>
+        
+        <!-- external : id 2-1-12-2 -->
+        <element name="external" id="2-1-12-2" occ="0-1" empty="1"/>
+        
+        <!-- sql : fi_charset 2-1-12-3 -->
+        <element name="fi_charset" id="2-1-12-3" occ="0-1"/>
+        
+        <!-- NA: not available/implemented yet (some sublevels below 2-1-12-4 as well) -->
+        <!-- sql : fi_chardef 2-1-12-4 -->
+        <element name="fi_chardef" id="2-1-12-4" occ="0-n"/>
+        
+        <!-- fi_format : id 2-1-12-5 -->
+        <element name="fi_format" id="2-1-12-5" occ="0-1" default="XML" option="FIXED|DELIM|MARKUP|SGML|XML|HTML"/>
+        
+        <!-- fi_recsep : id 2-1-12-6 -->
+        <element name="fi_recsep" id="2-1-12-6" occ="0-1" default="NO" option="CRLF|CR|LF|NO"/>
+        
+        <!-- fi_reclength : id 2-1-12-7 -->
+        <element name="fi_reclength" id="2-1-12-7" occ="0-1"/>
+        
+        <!-- NA: not available/implemented yet (some sublevels below 2-1-12-8 as well) -->
+        <!-- sql : delimspec 2-1-12-8 -->
+        <element name="delimspec" id="2-1-12-8" occ="0-1"/>
+        
+        <!-- padchar : id 2-1-12-9 -->
+        <element name="padchar" id="2-1-12-9" occ="0-1"/>
+        
+        <!-- nu_rectypes : id 2-1-12-10 -->
+        <element name="nu_rectypes" id="2-1-12-10" occ="1"/>
+        
+        <!-- rectypeid : id 2-1-12-11 -->
+        <element name="rectypeid" id="2-1-12-11" occ="0-1"/>
+        
+        <!-- nu_records : id 2-1-12-12 -->
+        <element name="nu_records" id="2-1-12-12" occ="0-1"/>
+        
+        <!-- nu_bytes : id 2-1-12-13 -->
+        <element name="nu_bytes" id="2-1-12-13" occ="0-1"/>
+        
+        
+        <!-- rectype : id 2-1-12-14 -->
+        <element name="rectype" id="2-1-12-14" occ="1-n">
+            <attribute name="name" occ="1"/>
+        </element>
+        
+        <!-- rt_descr : id 2-1-12-14-1 -->
+        <element name="rt_descr" id="2-1-12-14-1" occ="0-1"/>
+        
+        <!-- incomplete : id 2-1-12-14-2 -->
+        <element name="incomplete" id="2-1-12-14-2" occ="0-1" empty="1"/>
+        
+        <!-- rt_id : id 2-1-12-14-3 -->
+        <element name="rt_id" id="2-1-12-14-3" occ="0-1"/>
+        
+        <!-- primkey : id 2-1-12-14-4 -->
+        <element name="primkey" id="2-1-12-14-4" occ="0-1"/>
+        
+        <!-- altkey : id 2-1-12-14-5 -->
+        <element name="altkey" id="2-1-12-14-5" occ="0-1"/>
+        
+        
+        <!-- forkey : id 2-1-12-14-6 -->
+        <element name="forkey" id="2-1-12-14-6" occ="0-n"/>
+        
+        <!-- fields : id 2-1-12-14-6-1 -->
+        <element name="fields" id="2-1-12-14-6-1" occ="1"/>
+        
+        <!-- reffilerec : id 2-1-12-14-6-2 -->
+        <element name="reffilerec" id="2-1-12-14-6-2" occ="1"/>
+        
+        <!-- reffields : id 2-1-12-14-6-3 -->
+        <element name="reffields" id="2-1-12-14-6-3" occ="1"/>
+        
+        <!-- reltype : id 2-1-12-14-6-4 -->
+        <element name="reltype" id="2-1-12-14-6-4" occ="0-1"/>
+        
+        
+        <!-- rt_fixedlength : id 2-1-12-14-7 -->
+        <element name="rt_fixedlength" id="2-1-12-14-7" occ="0-1"/>
+        
+        <!-- rt_minlength : id 2-1-12-14-8 -->
+        <element name="rt_minlength" id="2-1-12-14-8" occ="0-1"/>
+        
+        <!-- rt_maxlength : id 2-1-12-14-9 -->
+        <element name="rt_maxlength" id="2-1-12-14-9" occ="0-1"/>
+        
+        <!-- nu_fields : id 2-1-12-14-10 -->
+        <element name="nu_fields" id="2-1-12-14-10" occ="0-1"/>
+        
+        <!-- nu_recs : id 2-1-12-14-11 -->
+        <element name="nu_recs" id="2-1-12-14-11" occ="0-1"/>
+        
+        
+        <!-- fieldtype : id 2-1-12-14-12 -->
+        <element name="fieldtype" id="2-1-12-14-12" occ="1-n">
+            <attribute name="name" occ="1"/>
+        </element>
+        
+        <!-- ft_descr : id 2-1-12-14-12-1 -->
+        <element name="ft_descr" id="2-1-12-14-12-1" occ="0-1"/>
+        
+        <!-- startpos : id 2-1-12-14-12-2 -->
+        <element name="startpos" id="2-1-12-14-12-2" occ="0-1"/>
+        
+        <!-- endpos : id 2-1-12-14-12-3 -->
+        <element name="endpos" id="2-1-12-14-12-3" occ="0-1"/>
+        
+        <!-- ft_fixlength : id 2-1-12-14-12-4 -->
+        <element name="ft_fixlength" id="2-1-12-14-12-4" occ="0-1"/>
+        
+        <!-- ft_minlength : id 2-1-12-14-12-5 -->
+        <element name="ft_minlength" id="2-1-12-14-12-5" occ="0-1"/>
+        
+        <!-- ft_maxlength : id 2-1-12-14-12-6 -->
+        <element name="ft_maxlength" id="2-1-12-14-12-6" occ="0-1"/>
+        
+        <!-- rep : id 2-1-12-14-12-7 -->
+        <element name="rep" id="2-1-12-14-12-7" occ="0-1" empty="1"/>
+        
+        <!-- datatype : id 2-1-12-14-12-8 -->
+        <element name="datatype" id="2-1-12-14-12-8" occ="1" option="STRING|INTEGER|FLOAT|DATE"/>
+        
+        <!-- mask : id 2-1-12-14-12-9 -->
+        <element name="mask" id="2-1-12-14-12-9" occ="0-1"/>
+        
+        <!-- packed : id 2-1-12-14-12-10 -->
+        <element name="packed" id="2-1-12-14-12-10" occ="0-1"/>
+        
+        <!-- century : id 2-1-12-14-12-11 -->
+        <element name="century" id="2-1-12-14-12-11" occ="0-1"/>
+        
+        <!-- ft_nullvalue : id 2-1-12-14-12-12 -->
+        <element name="ft_nullvalue" id="2-1-12-14-12-12" occ="0-1"/>
+        
+        <!-- nonull : id 2-1-12-14-12-13 -->
+        <element name="nonull" id="2-1-12-14-12-13" occ="0-1" empty="1"/>
+        
+        <!-- unique : id 2-1-12-14-12-14 -->
+        <element name="unique" id="2-1-12-14-12-14" occ="0-1" empty="1"/>
+        
+        <!-- code : id 2-1-12-14-12-15 -->
+        <element name="code" id="2-1-12-14-12-15" occ="0-n"/>
+        
+        <!-- value : id 2-1-12-14-12-15-1 -->
+        <element name="value" id="2-1-12-14-12-15-1" occ="1"/>
+        
+        <!-- explan : id 2-1-12-14-12-15-2 -->
+        <element name="explan" id="2-1-12-14-12-15-2" occ="1"/>
+    </structure>
+</data_structure>
